@@ -4,6 +4,8 @@ on:
   push:
 
 jobs:
+  hello:
+    runs-on: "ubuntu-latest"
     steps:
       - name: Checkout
         run: "echo hello"
