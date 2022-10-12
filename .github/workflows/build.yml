@@ -7,5 +7,6 @@ jobs:
   hello:
     runs-on: "ubuntu-latest"
     steps:
-      - name: Checkout
-        run: "echo hello"
+      - uses: actions/checkout@v3
+      - name: "Build Hello world"
+        run: "gcc main.c -o main.exe"
