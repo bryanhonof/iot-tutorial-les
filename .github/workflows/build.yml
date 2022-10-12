@@ -1,3 +1,6 @@
 name: "Build project"
 
+on:
+  push:
+
 
