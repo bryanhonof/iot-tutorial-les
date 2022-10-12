@@ -8,5 +8,6 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v3
-      - name: "Build Hello world"
-        run: "gcc main.c -o main.exe"
+      - name: Build and push Docker images
+        uses: docker/build-push-action@v3.2.0
+
